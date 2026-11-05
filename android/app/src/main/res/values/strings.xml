@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Gestione Vita</string>
+    <string name="title_activity_main">Gestione Vita</string>
+    <string name="package_name">it.samuele.gestionevita</string>
+    <string name="custom_url_scheme">it.samuele.gestionevita</string>
+</resources>

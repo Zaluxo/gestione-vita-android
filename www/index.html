@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Gestione Vita</title>
+<style>
+  :root {
+    color-scheme: dark;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    background: #121212;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  #ora {
+    font-size: 1.1rem;
+    color: #9ad1ff;
+  }
+</style>
+</head>
+<body>
+  <h1>Gestione Vita — Fase 1 OK</h1>
+  <div id="ora"></div>
+
+  <script>
+    function aggiornaOra() {
+      const now = new Date();
+      const data = now.toLocaleDateString('it-IT', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      const ora = now.toLocaleTimeString('it-IT');
+      document.getElementById('ora').textContent = data + ' — ' + ora;
+    }
+    aggiornaOra();
+    setInterval(aggiornaOra, 1000);
+  </script>
+</body>
+</html>

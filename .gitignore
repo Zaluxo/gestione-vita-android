@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build Android / Gradle
+android/app/build/
+android/build/
+android/.gradle/
+android/captures/
+android/local.properties
+android/*.iml
+android/.idea/
+android/app/release/
+android/app/debug/
+
+# File locali Android Studio
+.gradle/
+*.iml
+.idea/
+local.properties
+.cxx/
+
+# Capacitor
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+
+# OS
+.DS_Store
+Thumbs.db
